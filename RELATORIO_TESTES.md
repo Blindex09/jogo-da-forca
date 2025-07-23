@@ -1,6 +1,6 @@
-# ✅ RELATÓRIO DE TESTES AUTOMATIZADOS - JOGO DA FORCA
+ ✅ RELATÓRIO DE TESTES AUTOMATIZADOS - JOGO DA FORCA
 
-## 🎯 **RESUMO EXECUTIVO**
+ 🎯 **RESUMO EXECUTIVO**
 
 **STATUS**: ✅ **TODOS OS TESTES APROVADOS**  
 **TOTAL DE TESTES**: **106 testes automatizados**  
@@ -9,7 +9,7 @@
 
 ---
 
-## 📊 **ESTATÍSTICAS DOS TESTES**
+ 📊 **ESTATÍSTICAS DOS TESTES**
 
 | Métrica | Valor | Status |
 |---------|-------|--------|
@@ -21,11 +21,11 @@
 
 ---
 
-## 🏗️ **COBERTURA DE TESTES POR COMPONENTE**
+ 🏗️ **COBERTURA DE TESTES POR COMPONENTE**
 
-### 📦 **MODEL PACKAGE** (65 testes)
+ 📦 **MODEL PACKAGE** (65 testes)
 
-#### 🔤 **PalavraTest** - 22 testes ✅
+ 🔤 **PalavraTest** - 22 testes ✅
 - ✅ Criação e inicialização de palavras
 - ✅ Tentativas de letras corretas/incorretas
 - ✅ Conversão automática maiúscula/minúscula
@@ -34,7 +34,7 @@
 - ✅ Controle de letras já tentadas
 - ✅ Casos especiais (palavra única, letras repetidas)
 
-#### 🎨 **ForcaTest** - 25 testes ✅
+ 🎨 **ForcaTest** - 25 testes ✅
 - ✅ Inicialização sem erros
 - ✅ Adição progressiva de erros (1-6)
 - ✅ Controle de limite máximo de erros
@@ -44,7 +44,7 @@
 - ✅ Cálculo de tentativas restantes
 - ✅ Validação de formato ASCII
 
-#### 📚 **BancoPalavrasTest** - 18 testes ✅
+ 📚 **BancoPalavrasTest** - 18 testes ✅
 - ✅ Inicialização com 5 categorias
 - ✅ Verificação de existência de categorias
 - ✅ Obtenção de palavras aleatórias
@@ -54,9 +54,9 @@
 - ✅ Múltiplas instâncias independentes
 - ✅ Robustez em operações repetidas
 
-### 🎮 **CONTROLLER PACKAGE** (10 testes)
+ 🎮 **CONTROLLER PACKAGE** (10 testes)
 
-#### 🕹️ **JogoDaForcaTest** - 10 testes ✅
+ 🕹️ **JogoDaForcaTest** - 10 testes ✅
 - ✅ Inicialização correta do controlador
 - ✅ Integração perfeita com banco de palavras
 - ✅ Estado inicial consistente
@@ -64,9 +64,9 @@
 - ✅ Suporte a múltiplas instâncias
 - ✅ Robustez após fechamento de recursos
 
-### 🔗 **INTEGRATION TESTS** (31 testes)
+ 🔗 **INTEGRATION TESTS** (31 testes)
 
-#### 🎯 **IntegrationTest** - 31 testes ✅
+ 🎯 **IntegrationTest** - 31 testes ✅
 - ✅ **Simulação de jogo completo com VITÓRIA**
 - ✅ **Simulação de jogo completo com DERROTA**
 - ✅ **Jogo misto com vitória de última hora**
@@ -77,21 +77,21 @@
 
 ---
 
-## 🧪 **CENÁRIOS DE TESTE VALIDADOS**
+ 🧪 **CENÁRIOS DE TESTE VALIDADOS**
 
-### ✅ **Cenários de Sucesso**
+ ✅ **Cenários de Sucesso**
 - 🎉 Jogador descobre palavra completa
 - 🎲 Seleção aleatória de palavras/categorias
 - 🔄 Reinicialização de jogos múltiplos
 - 📝 Processamento correto de entrada do usuário
 
-### ✅ **Cenários de Falha Controlada**
+ ✅ **Cenários de Falha Controlada**
 - 💀 Jogador atinge 6 erros (derrota)
 - ❌ Tentativas de letras incorretas
 - 🚫 Validação de entrada inválida
 - 🔒 Prevenção de repetição de letras
 
-### ✅ **Cenários Extremos**
+ ✅ **Cenários Extremos**
 - 📏 Palavras de 1 letra (mínimo)
 - 📏 Palavras de 11+ letras (máximo)
 - 🔁 Palavras com letras repetidas
@@ -99,41 +99,41 @@
 
 ---
 
-## 🎨 **VALIDAÇÕES DE INTERFACE**
+ 🎨 **VALIDAÇÕES DE INTERFACE**
 
-### ✅ **Desenhos ASCII da Forca**
+ ✅ **Desenhos ASCII da Forca**
 - ✅ 7 estágios progressivos (0-6 erros)
 - ✅ Formato ASCII válido e consistente
 - ✅ Elementos visuais corretos (cabeça, corpo, braços, pernas)
 - ✅ Base da forca sempre presente
 
-### ✅ **Renderização de Palavras**
+ ✅ **Renderização de Palavras**
 - ✅ Espaços para letras não descobertas: `_ _ _ _`
 - ✅ Revelação progressiva: `J A _ A`
 - ✅ Formatação consistente com espaços
 
 ---
 
-## 🔧 **EXECUTAR OS TESTES**
+ 🔧 **EXECUTAR OS TESTES**
 
-### **Todos os Testes**
+ **Todos os Testes**
 ```bash
 cd "C:\Users\olive\Documents\GitHub\jogo-da-forca"
 gradle test
 ```
 
-### **Com Detalhes**
+ **Com Detalhes**
 ```bash
 gradle test --info
 ```
 
-### **Relatório HTML**
+ **Relatório HTML**
 ```bash
-# Após executar os testes, abrir:
+ Após executar os testes, abrir:
 build/reports/tests/test/index.html
 ```
 
-### **Testes Específicos**
+ **Testes Específicos**
 ```bash
 gradle test --tests "com.bootcamp.forca.model.*"
 gradle test --tests "com.bootcamp.forca.controller.*"
@@ -142,7 +142,7 @@ gradle test --tests "com.bootcamp.forca.IntegrationTest"
 
 ---
 
-## 📈 **MÉTRICAS DE QUALIDADE**
+ 📈 **MÉTRICAS DE QUALIDADE**
 
 | Aspecto | Avaliação | Detalhes |
 |---------|-----------|----------|
@@ -155,7 +155,7 @@ gradle test --tests "com.bootcamp.forca.IntegrationTest"
 
 ---
 
-## 🎓 **TECNOLOGIAS DE TESTE UTILIZADAS**
+ 🎓 **TECNOLOGIAS DE TESTE UTILIZADAS**
 
 - **JUnit 5** (Jupiter): Framework de testes moderno
 - **JUnit Platform Suite**: Organização em suítes de teste  
@@ -165,7 +165,7 @@ gradle test --tests "com.bootcamp.forca.IntegrationTest"
 
 ---
 
-## 🏆 **CONCLUSÃO**
+ 🏆 **CONCLUSÃO**
 
 O **Jogo da Forca** possui uma **suíte de testes automatizados exemplar** com:
 
