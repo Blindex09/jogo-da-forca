@@ -1,101 +1,101 @@
-# 🧪 GUIA DE EXECUÇÃO DE TESTES - JOGO DA FORCA
+ 🧪 GUIA DE EXECUÇÃO DE TESTES - JOGO DA FORCA
 
-## ⚡ **EXECUÇÃO RÁPIDA**
+ ⚡ **EXECUÇÃO RÁPIDA**
 
-### **Executar Todos os Testes**
+ **Executar Todos os Testes**
 ```bash
 cd "C:\Users\olive\Documents\GitHub\jogo-da-forca"
 gradle test
 ```
 
-### **Executar com Relatório Detalhado**
+ **Executar com Relatório Detalhado**
 ```bash
 gradle test --info
 ```
 
-## 📊 **VISUALIZAR RESULTADOS**
+ 📊 **VISUALIZAR RESULTADOS**
 
-### **Relatório HTML (Recomendado)**
+ **Relatório HTML (Recomendado)**
 Após executar os testes, abra no navegador:
 ```
 C:\Users\olive\Documents\GitHub\jogo-da-forca\build\reports\tests\test\index.html
 ```
 
-### **Resultados XML**
+ **Resultados XML**
 ```bash
-# Arquivos XML em:
+ Arquivos XML em:
 build/test-results/test/
 ```
 
-## 🎯 **EXECUÇÃO SELETIVA**
+ 🎯 **EXECUÇÃO SELETIVA**
 
-### **Testes por Package**
+ **Testes por Package**
 ```bash
-# Apenas testes do modelo
+ Apenas testes do modelo
 gradle test --tests "com.bootcamp.forca.model.*"
 
-# Apenas testes do controller
+ Apenas testes do controller
 gradle test --tests "com.bootcamp.forca.controller.*"
 
-# Apenas testes de integração
+ Apenas testes de integração
 gradle test --tests "com.bootcamp.forca.IntegrationTest"
 ```
 
-### **Testes por Classe**
+ **Testes por Classe**
 ```bash
-# Testes da classe Palavra
+ Testes da classe Palavra
 gradle test --tests "com.bootcamp.forca.model.PalavraTest"
 
-# Testes da classe Forca
+ Testes da classe Forca
 gradle test --tests "com.bootcamp.forca.model.ForcaTest"
 
-# Testes do Banco de Palavras
+ Testes do Banco de Palavras
 gradle test --tests "com.bootcamp.forca.model.BancoPalavrasTest"
 ```
 
-### **Teste Específico**
+ **Teste Específico**
 ```bash
-# Um teste específico
+ Um teste específico
 gradle test --tests "com.bootcamp.forca.model.PalavraTest.deveCriarPalavraCorretamente"
 ```
 
-## 🔧 **OPÇÕES AVANÇADAS**
+ 🔧 **OPÇÕES AVANÇADAS**
 
-### **Continuar mesmo com falhas**
+ **Continuar mesmo com falhas**
 ```bash
 gradle test --continue
 ```
 
-### **Executar em paralelo**
+ **Executar em paralelo**
 ```bash
 gradle test --parallel
 ```
 
-### **Com stack trace completo**
+ **Com stack trace completo**
 ```bash
 gradle test --stacktrace
 ```
 
-### **Modo Debug**
+ **Modo Debug**
 ```bash
 gradle test --debug
 ```
 
-## 📋 **ESTRUTURA DOS TESTES CRIADOS**
+ 📋 **ESTRUTURA DOS TESTES CRIADOS**
 
 ```
 src/test/java/com/bootcamp/forca/
-├── 📄 AllTestsSuite.java          # Suíte completa de testes
-├── 📄 IntegrationTest.java        # Testes de integração (7 testes)
+├── 📄 AllTestsSuite.java           Suíte completa de testes
+├── 📄 IntegrationTest.java         Testes de integração (7 testes)
 ├── 📁 controller/
-│   └── 📄 JogoDaForcaTest.java   # Testes do controller (10 testes)
+│   └── 📄 JogoDaForcaTest.java    Testes do controller (10 testes)
 └── 📁 model/
-    ├── 📄 PalavraTest.java       # Testes da classe Palavra (22 testes)
-    ├── 📄 ForcaTest.java         # Testes da classe Forca (25 testes)
-    └── 📄 BancoPalavrasTest.java # Testes do BancoPalavras (18 testes)
+    ├── 📄 PalavraTest.java        Testes da classe Palavra (22 testes)
+    ├── 📄 ForcaTest.java          Testes da classe Forca (25 testes)
+    └── 📄 BancoPalavrasTest.java  Testes do BancoPalavras (18 testes)
 ```
 
-## 📈 **CONTADORES DE TESTES**
+ 📈 **CONTADORES DE TESTES**
 
 | Classe de Teste | Número de Testes | Foco |
 |-----------------|------------------|------|
@@ -106,29 +106,29 @@ src/test/java/com/bootcamp/forca/
 | **IntegrationTest** | 7 | Cenários completos de jogo |
 | **Total** | **82** | **Cobertura completa** |
 
-## 🎮 **CENÁRIOS TESTADOS**
+ 🎮 **CENÁRIOS TESTADOS**
 
-### ✅ **Funcionalidades Core**
+ ✅ **Funcionalidades Core**
 - Criação e manipulação de palavras
 - Sistema de tentativas e erros
 - Desenhos ASCII da forca
 - Banco de palavras e categorias
 - Lógica completa do jogo
 
-### ✅ **Casos de Borda**
+ ✅ **Casos de Borda**
 - Palavras de 1 letra
 - Palavras com letras repetidas
 - Máximo de erros (6)
 - Categorias inexistentes
 - Entradas inválidas
 
-### ✅ **Integração**
+ ✅ **Integração**
 - Jogo completo com vitória
 - Jogo completo com derrota
 - Múltiplas sessões
 - Reinicialização do sistema
 
-## 🚀 **EXEMPLO DE SAÍDA**
+ 🚀 **EXEMPLO DE SAÍDA**
 
 ```bash
 $ gradle test
@@ -145,20 +145,20 @@ BUILD SUCCESSFUL in 15s
 4 actionable tasks: 2 executed, 2 up-to-date
 ```
 
-## 🎯 **VALIDAÇÃO CONTÍNUA**
+ 🎯 **VALIDAÇÃO CONTÍNUA**
 
-### **Executar antes de cada commit**
+ **Executar antes de cada commit**
 ```bash
 gradle clean test
 ```
 
-### **Integração com CI/CD**
+ **Integração com CI/CD**
 ```bash
-# Para pipelines automatizadas
+ Para pipelines automatizadas
 gradle test --continue --info
 ```
 
-## 🏆 **STATUS ATUAL**
+ 🏆 **STATUS ATUAL**
 
 **✅ TODOS OS 82 TESTES PASSANDO**
 - 0 falhas
