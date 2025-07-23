@@ -1,25 +1,25 @@
-# 🎮 PROJETO FINALIZADO - JOGO DA FORCA
+ 🎮 PROJETO FINALIZADO - JOGO DA FORCA
 
-## 🏆 STATUS: **CONCLUÍDO COM SUCESSO**
+ 🏆 STATUS: **CONCLUÍDO COM SUCESSO**
 
 **Data de Finalização**: 23 de Julho de 2025  
-**Repositório GitHub**: https://github.com/Blindex09/jogo-da-forca  
-**Total de Arquivos**: 22+  
-**Total de Linhas**: 2,800+
+**Commit Hash**: `1bc6988`  
+**Total de Arquivos**: 21  
+**Total de Linhas**: 2,709
 
 ---
 
-## ✅ **ENTREGAS REALIZADAS**
+ ✅ **ENTREGAS REALIZADAS**
 
-### 🎯 **Funcionalidades Implementadas**
+ 🎯 **Funcionalidades Implementadas**
 - ✅ Sistema completo de jogo da forca
 - ✅ Interface console interativa com ASCII art
-- ✅ 5 categorias de palavras (Frutas, Animais, Países, Cores, Profissões)
+- ✅ 5 categorias de palavras (Frutas, Animais, Países, Cores, Esportes)
 - ✅ Desenho ASCII dinâmico da forca (7 estágios)
 - ✅ Sistema de tentativas e pontuação
 - ✅ Programação Orientada a Objetos
 
-### 🧪 **Testes Automatizados**
+ 🧪 **Testes Automatizados**
 - ✅ **106 testes automatizados** - 100% aprovados
 - ✅ Cobertura completa de todas as funcionalidades
 - ✅ Testes unitários para todas as classes
@@ -27,14 +27,14 @@
 - ✅ Validação de casos extremos e edge cases
 - ✅ Execução automatizada via Gradle
 
-### 📁 **Arquitetura e Organização**
+ 📁 **Arquitetura e Organização**
 - ✅ Separação clara em packages (model, view, controller)
 - ✅ Código bem estruturado e documentado
 - ✅ Build automatizado com Gradle
 - ✅ Documentação técnica completa
 - ✅ Scripts de execução (.bat para Windows)
 
-### 📚 **Documentação Técnica**
+ 📚 **Documentação Técnica**
 - ✅ README.md completo com instruções
 - ✅ GUIA_TESTES.md com instruções de teste
 - ✅ RELATORIO_TESTES.md com resultados detalhados
@@ -44,7 +44,7 @@
 
 ---
 
-## 🚀 **QUALIDADE ASSEGURADA**
+ 🚀 **QUALIDADE ASSEGURADA**
 
 | Métrica | Status | Detalhes |
 |---------|--------|----------|
@@ -56,7 +56,7 @@
 
 ---
 
-## 🛠️ **TECNOLOGIAS UTILIZADAS**
+ 🛠️ **TECNOLOGIAS UTILIZADAS**
 
 - **Java 11+** - Linguagem principal
 - **Gradle 8.x** - Build automation
@@ -67,28 +67,28 @@
 
 ---
 
-## 📊 **ESTATÍSTICAS FINAIS**
+ 📊 **ESTATÍSTICAS FINAIS**
 
-### **Código Fonte**
+ **Código Fonte**
 - **Classes Model**: 3 (Palavra, Forca, BancoPalavras)
 - **Classes Controller**: 1 (JogoDaForca)
 - **Classes View**: 1 (Menu)
 - **Classe Principal**: 1 (Main)
 
-### **Testes**
-- **Classes de Teste**: 6+
+ **Testes**
+- **Classes de Teste**: 6
 - **Métodos de Teste**: 106
 - **Suite de Testes**: 1 (AllTestsSuite)
 - **Testes de Integração**: 31
 
-### **Documentação**
-- **Arquivos .md**: 6+
+ **Documentação**
+- **Arquivos .md**: 6
 - **Scripts de Automação**: 1 (.bat)
 - **Configurações**: 3 (.gitignore, build.gradle, gradle.properties)
 
 ---
 
-## 🎯 **OBJETIVOS DO BOOTCAMP ATINGIDOS**
+ 🎯 **OBJETIVOS DO BOOTCAMP ATINGIDOS**
 
 ✅ **Programação Orientada a Objetos**
 - Encapsulamento, herança, polimorfismo aplicados
@@ -112,7 +112,7 @@
 
 ---
 
-## 🏁 **CONSIDERAÇÕES FINAIS**
+ 🏁 **CONSIDERAÇÕES FINAIS**
 
 O projeto **Jogo da Forca** foi desenvolvido seguindo as melhores práticas de desenvolvimento de software:
 
@@ -121,7 +121,7 @@ O projeto **Jogo da Forca** foi desenvolvido seguindo as melhores práticas de d
 - **Documentation First**: Documentação completa para usuários e desenvolvedores
 - **Git Workflow**: Controle de versão profissional com commits semânticos
 
-### **Sistema PRONTO PARA PRODUÇÃO** 🚀
+ **Sistema PRONTO PARA PRODUÇÃO** 🚀
 
 O jogo está completamente funcional, testado e documentado, pronto para ser executado, distribuído ou evoluído.
 
@@ -129,4 +129,4 @@ O jogo está completamente funcional, testado e documentado, pronto para ser exe
 
 **Desenvolvido com dedicação para o Bootcamp**  
 **Status**: ✅ **APROVADO PARA ENTREGA**  
-**GitHub**: https://github.com/Blindex09/jogo-da-forca
+**Commit**: `1bc6988` - PROJETO CONCLUÍDO
